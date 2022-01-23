@@ -1,0 +1,144 @@
+/*Normalización*/
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/*Estilos comunes*/
+body {
+	background: #F6F6FE;
+	font-family: 'Open Sans', sans-serif;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: none;
+	transition: 0.3s ease all;
+}
+
+/* CLASES CONTENEDOR */
+
+.contenedor {
+	max-width: 100%;
+	width: 90%;
+	margin: 0 auto;
+}
+
+.contenedor__cards {
+	display:flex;
+	flex-wrap:nowrap;
+	margin: 70px 0px;
+	gap: 20px;
+}
+
+
+/* CLASES CARD */
+
+.card{
+	background:#FFF;
+	border-radius:15px;
+	padding:20px;
+	display:flex;
+	align-items:center;
+	position:relative;
+	margin-bottom:50px;
+	width:50%;
+}
+
+.card__linkImagen{
+	width:650px;
+	height:200px;
+	background:#000;
+	margin-right:20px;
+	border-radius:10px;
+	overflow:hidden;
+	display:inline-block;
+}
+
+.card__imagen {
+	width:650px;
+	height:200px;
+}
+
+.card__enlace {
+	color:#000;
+}
+
+.card__titulo {
+	font-family:"Raleway",sans-serif;
+	font-size:30px;
+	font-weight:normal;
+	margin-bottom:20px;
+}
+
+.card__titulo-bold:hover{
+	font-weight:bold;
+}
+
+.card__parrafo {
+	line-height:28px;
+	color:#6D6D6D;
+	margin-bottom:10px;
+}
+
+/* CLASES BOTON */
+
+.boton {
+	border:none;
+	min-width:180px;
+	height:50px;
+	padding:0px 30px;
+	color:#FFF;
+	display:inline-flex;
+	justify-content:space-between;
+	align-items:center;
+	background:#403CC2;
+	transition: 0.3s ease all;
+	border-radius:100px;
+	cursor:pointer;
+	box-shadow: inset 1px 2px 12px 8px rgba(255,255,255,0.19);
+}
+
+.boton:hover{
+	background:#1B1881;
+}
+
+.boton-pressed:active{
+	background:#1B1881;
+	box-shadow: 0px 0px 12px 0px rgba(255,255,255,0.19);
+	transition: 0.3s ease all;
+	font-weight: bold;
+}
+
+.boton-verde{
+	background:#7BA771;
+}
+
+.boton-verde:hover{
+	background:#437837;
+}
+	
+.boton-absolute{
+	position:absolute;
+	right: 20px;
+	bottom: -25px;
+}
+
+/* CLASES FRASES */
+
+.frase {
+	text-align:center;
+	margin:70px 0px;
+}
+
+.frase__texto{
+	margin-bottom:20px;
+	font-size:30px;
+	font-family:"Raleway",sans-serif;
+	font-weight:600;
+	font-style:italic;
+}
